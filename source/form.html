@@ -42,36 +42,42 @@
     <div class="background-images"></div>
     <main class="form-container">
       <div class="feedback">
-        <h2 class="feedback-title">Оставьте свой отзыв</h2>
-        <p class="feedback-description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а так же о посещенных вами достопримечательностях</p>
+        <h2 class="feedback__title">Оставьте свой отзыв</h2>
+        <p class="feedback__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а так же о посещенных вами достопримечательностях</p>
       </div>
       <form class="feedback-form" action="https://echo.htmlacademy.ru/">
-        <section class="feedback-section">
-          <h2 class="feedback-form-title">Представьтесь:</h2>
-        <div class="feedback-group">
-          <label class="feedback-group__name" for="input__name">Имя*:</label>
-          <input class="feedback-group__name" type="text" value="Пётр" id="input__name" name="input__name" placeholder="Введите имя" required>
-        </div>
-        <div class="feedback-group">
-          <label class="feedback-group__name" for="input__name">Фамилия*:</label>
-          <input class="feedback-group__name" type="text" value="Пустота" id="input__name" name="input__name" placeholder="Введите фамилию" required>
-        </div>
-        <div class="feedback-group">
-          <label class="feedback-group__name" for="input__name">Отчество*:</label>
-          <input class="feedback-group__name" type="text" value="Викторович" id="input__name" name="input__name" placeholder="Введите отчество" required>
-        </div>
+        <section class="feedback__section">
+          <h2 class="feedback__section-title">Представьтесь:</h2>
+        <ul class="feedback__group">
+        <li class="feedback__item">
+          <label class="feedback-group__name" for="input__name-1">Имя*:</label>
+          <input class="feedback-group__name" type="text" value="Пётр" id="input__name-1" name="input-name" placeholder="Введите имя" required>
+        </li>
+        <li class="feedback__item">
+          <label class="feedback-group__name" for="input__name-2">Фамилия*:</label>
+          <input class="feedback-group__name" type="text" value="Пустота" id="input__name-2" name="input-name" placeholder="Введите фамилию" required>
+        </li>
+        <li class="feedback__item">
+          <label class="feedback-group__name" for="input__name-3">Отчество*:</label>
+          <input class="feedback-group__name" type="text" value="Викторович" id="input__name-3" name="input-name" placeholder="Введите отчество" required>
+        </li>
+        </ul>
       </section>
       <section class="feedback-section-contacts">
         <h2 class="feedback-form-title">Контактная информация:</h2>
         <div class="feedback-group-contact">
+          <ul class="feedback-list">
+            <li class="feedback-item">
           <label class="feedback-group-phone" for="input-phone">Контактный телефон*:</label>
           <input class="feedback-form-phone" type="text" id="input-phone" name="input-phone" placeholder="Введите телефон" required>
-          <button class="button-phone" type="button"></button>
-        </div>
-        <div class="feedback-group-contact">
+          <img class="feedback-image-phone" src="img/phone.svg" alt="Контактный телефон.">
+            </li>
+            <li class="feedback-item">
           <label class="feedback-group-email" for="input-email">Электронная почта*:</label>
           <input class="feedback-form-email" type="text" id="input-email" name="input-email" placeholder="Введите e-mail" required>
-          <button class="button-email" type="button"></button>
+          <img class="feedback-image-email" src="img/mail.svg" alt="Электронная почта.">
+            </li>
+          </ul>
         </div>
       </section>
       <section class="feedback-impression__section">
