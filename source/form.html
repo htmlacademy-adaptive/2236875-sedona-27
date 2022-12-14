@@ -42,89 +42,95 @@
     <div class="background-images"></div>
     <main class="form-container">
       <div class="feedback">
-        <h2 class="feedback-title">Оставьте свой отзыв</h2>
-        <p class="feedback-description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а так же о посещенных вами достопримечательностях</p>
+        <h2 class="feedback__title">Оставьте свой отзыв</h2>
+        <p class="feedback__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а так же о посещенных вами достопримечательностях</p>
       </div>
-      <form class="feedback-form" action="https://echo.htmlacademy.ru/">
-        <section class="feedback-section">
-          <h2 class="feedback-form-title">Представьтесь:</h2>
-        <div class="feedback-group">
-          <label class="feedback-group__name" for="input__name">Имя*:</label>
-          <input class="feedback-group__name" type="text" value="Пётр" id="input__name" name="input__name" placeholder="Введите имя" required>
-        </div>
-        <div class="feedback-group">
-          <label class="feedback-group__name" for="input__name">Фамилия*:</label>
-          <input class="feedback-group__name" type="text" value="Пустота" id="input__name" name="input__name" placeholder="Введите фамилию" required>
-        </div>
-        <div class="feedback-group">
-          <label class="feedback-group__name" for="input__name">Отчество*:</label>
-          <input class="feedback-group__name" type="text" value="Викторович" id="input__name" name="input__name" placeholder="Введите отчество" required>
+      <form class="feedback__form" action="https://echo.htmlacademy.ru/">
+        <section class="feedback__section">
+          <h2 class="feedback__title-name">Представьтесь:</h2>
+        <ul class="feedback__group-name">
+        <li class="feedback__item-name">
+          <label class="feedback__name" for="input__name-1">Имя*:</label>
+          <input class="feedback__name" type="text" value="Пётр" id="input__name-1" name="input-name" placeholder="Введите имя" required>
+        </li>
+        <li class="feedback__item-name">
+          <label class="feedback__name" for="input__name-2">Фамилия*:</label>
+          <input class="feedback__name" type="text" value="Пустота" id="input__name-2" name="input-name" placeholder="Введите фамилию" required>
+        </li>
+        <li class="feedback__item-name">
+          <label class="feedback__name" for="input__name-3">Отчество*:</label>
+          <input class="feedback__name" type="text" value="Викторович" id="input__name-3" name="input-name" placeholder="Введите отчество" required>
+        </li>
+        </ul>
+      </section>
+      <section class="feedback__contacts">
+        <h2 class="feedback__title-contact">Контактная информация:</h2>
+        <div class="feedback__group-contact">
+          <ul class="feedback__list-contact">
+            <li class="feedback__item-contact">
+          <label class="feedback__phone" for="input-phone">Контактный телефон*:</label>
+          <input class="feedback__phone-form" type="text" id="input-phone" name="input-phone" placeholder="Введите телефон" required>
+          <img class="feedback__phone-image" src="img/phone.svg" alt="Контактный телефон.">
+            </li>
+            <li class="feedback__item-contact">
+          <label class="feedback__email-group" for="input-email">Электронная почта*:</label>
+          <input class="feedback__email-form" type="text" id="input-email" name="input-email" placeholder="Введите e-mail" required>
+          <img class="feedback__email-image" src="img/mail.svg" alt="Электронная почта.">
+            </li>
+          </ul>
         </div>
       </section>
-      <section class="feedback-section-contacts">
-        <h2 class="feedback-form-title">Контактная информация:</h2>
-        <div class="feedback-group-contact">
-          <label class="feedback-group-phone" for="input-phone">Контактный телефон*:</label>
-          <input class="feedback-form-phone" type="text" id="input-phone" name="input-phone" placeholder="Введите телефон" required>
-          <button class="button-phone" type="button"></button>
-        </div>
-        <div class="feedback-group-contact">
-          <label class="feedback-group-email" for="input-email">Электронная почта*:</label>
-          <input class="feedback-form-email" type="text" id="input-email" name="input-email" placeholder="Введите e-mail" required>
-          <button class="button-email" type="button"></button>
-        </div>
-      </section>
-      <section class="feedback-impression__section">
-        <h2 class="feedback-form-title">Ваше общее впечатление:</h2>
-        <fieldset class="feedback-impression">
-          <div class="impression-group">
-            <ul class="impression-list">
-              <li class="impression-item">
-                <input class="impression-radio" type="radio" name="positive" value="positive" id="positive" checked>
+      <section class="feedback__impression">
+        <h2 class="feedback__title-impression">Ваше общее впечатление:</h2>
+        <fieldset class="feedback__impression-fieldset">
+          <div class="feedback__impression-group">
+            <ul class="feedback__list-impression">
+              <li class="feedback__item-impression">
+                <input class="impression__radio" type="radio" name="positive" value="positive" id="positive" checked>
                 <label class="impression__name" for="positive">Скорее положительное</label>
               </li>
-              <li class="impression-item">
-                <input class="impression-radio" type="radio" name="negative" value="negative" id="negative">
+              <li class="feedback__item-impression">
+                <input class="impression__radio" type="radio" name="negative" value="negative" id="negative">
                 <label class="impression__name" for="negative">Скорее отрицательное</label>
               </li>
-              <li class="impression-item">
-                <input class="impression-radio" type="radio" name="difficult" value="difficult" id="difficult">
+              <li class="feedback__item-impression">
+                <input class="impression__radio" type="radio" name="difficult" value="difficult" id="difficult">
                 <label class="impression__name" for="difficult">Затрудняюсь ответить</label>
               </li>
             </ul>
           </div>
         </fieldset>
       </section>
-      <section class="feedback-visited__section">
-        <h2 class="feedback-form-title">Посещенные достопремичательности:</h2>
-        <fieldset class="feedback-visited">
-          <div class="visited-group">
-            <ul class="visited-list">
-              <li class="visited-item">
-                <input class="visited-checkbox" type="checkbox" name="devil" value="devil" id="devil" checked>
+      <section class="feedback__visited">
+        <h2 class="feedback__title-visited">Посещенные достопремичательности:</h2>
+        <fieldset class="feedback__visited-fieldset">
+          <div class="feedback__group-visited">
+            <ul class="feedback__list-visited">
+              <li class="feedback__item-visited">
+                <input class="visited__checkbox" type="checkbox" name="devil" value="devil" id="devil" checked>
                 <label class="visited__name" for="devil">Мост дьявола</label>
               </li>
-              <li class="visited-item">
-                <input class="visited-checkbox" type="checkbox" name="mountain" value="mountain" id="mountain" checked>
+              <li class="feedback__item-visited">
+                <input class="visited__checkbox" type="checkbox" name="mountain" value="mountain" id="mountain" checked>
                 <label class="visited__name" for="mountain">Гора-колокол</label>
               </li>
-              <li class="visited-item">
-                <input class="visited-checkbox" type="checkbox" name="park" value="park" id="park" checked>
+              <li class="feedback__item-visited">
+                <input class="visited__checkbox" type="checkbox" name="park" value="park" id="park" checked>
                 <label class="visited__name" for="park">Слайд-парк</label>
               </li>
-              <li class="visited-item">
-                <input class="visited-checkbox" type="checkbox" name="red-rocks" value="red-rocks" id="red-rocks">
+              <li class="feedback__item-visited">
+                <input class="visited__checkbox" type="checkbox" name="red-rocks" value="red-rocks" id="red-rocks">
                 <label class="visited__name" for="red-rocks">Красные скалы</label>
               </li>
             </ul>
           </div>
         </fieldset>
       </section>
-      <section class="feedback-emotion">
-        <h2 class="feedback-form-title">Опишите свои эмоции:</h2>
-        <div class="emotion-group">
-          <input class="emotion-input" type="text" name="emotion" placeholder="Опишите подробно все свои восторги">
-          <button type="button" class="feedback-button" value="Отправить отзыв"></button>
+      <section class="feedback__emotion">
+        <h2 class="feedback__title-emotion">Опишите свои эмоции:</h2>
+        <div class="feedback__group-emotion">
+          <input class="emotion__input" type="text" name="emotion" placeholder="Опишите подробно все свои восторги">
+          <button type="button" class="feedback__button" value="Отправить отзыв"></button>
           <p class="more">*_обязательные поля</p>
         </div>
       </section>
