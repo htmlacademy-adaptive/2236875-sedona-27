@@ -2,29 +2,28 @@
   font-family: "PT sans";
   font-style: normal;
   font-weight: normal;
-  src: url("../fonts/ptsans.woff2") format("woff2");
-  src: url("../fonts/ptsans.woff") format("woff");
+  src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
   font-display: swap;
 }
 @font-face {
   font-family: "PT sans";
   font-style: normal;
   font-weight: bold;
-  src: url("../fonts/ptsansbold.woff2") format("woff2");
-  src: url("../fonts/ptsansbold.woff") format("woff");
+  src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
   font-display: swap;
 }
-.main-nav__list {
-  list-style: none;
-}
-.site-list__item {
+.button__text {
   font-family: inherit;
   font-style: normal;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 21px;
   line-height: 26px;
   align-items: center;
   text-transform: uppercase;
+  color: #FFFFFF;
+}
+.main-nav__list {
+  list-style: none;
 }
 .page {
   height: 100%;
@@ -52,9 +51,6 @@
 .title {
   background-color: #fff;
 }
-.catalog__list {
-  background-color: #fff;
-}
 .main-title {
   font-family: inherit;
   font-style: normal;
@@ -65,50 +61,7 @@
   text-transform: uppercase;
   color: #000000;
 }
-.catalog__title {
-  font-family: inherit;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 26px;
-  align-items: center;
-  text-transform: uppercase;
-  color: #000000;
-}
 .main-discription {
-  font-family: inherit;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 21px;
-  align-items: center;
-  text-transform: uppercase;
-  color: #333333;
-}
-.catalog__discription {
-  font-family: inherit;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 21px;
-  align-items: center;
-  text-transform: uppercase;
-  color: #333333;
-}
-.feedback {
-  background-color: #fff;
-}
-.feedback__title {
-  font-family: inherit;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 26px;
-  align-items: center;
-  text-transform: uppercase;
-  color: #000000;
-}
-.feedback__discription {
   font-family: inherit;
   font-style: normal;
   font-weight: normal;
@@ -186,30 +139,6 @@
 .main-footer {
   background-color: #fff;
 }
-.hashtag {
-  font-family: inherit;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 21px;
-  line-height: 26px;
-  align-items: center;
-  text-transform: uppercase;
-  color: #000000;
-}
-.copyright__text {
-  font-family: inherit;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 21px;
-  align-items: center;
-  text-transform: uppercase;
-  color: #000000;
-}
-.social__decoration {
-  background: #81B3D2;
-  padding: 20px 18px;
-}
 .interesting {
   background-color: #fff;
 }
@@ -243,6 +172,39 @@
   align-items: center;
   text-transform: uppercase;
   color: #FFFFFF;
+}
+.hashtag {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  align-items: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+.social__decoration {
+  background: #81B3D2;
+  padding: 20px 18px;
+}
+.copyright__text {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  align-items: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+.site-list__item {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  align-items: center;
+  text-transform: uppercase;
 }
 .feedback__form {
   background-color: #fff;
@@ -386,6 +348,29 @@
 .feedback__list-visited {
   list-style: none;
 }
+.feedback {
+  background-color: #fff;
+}
+.feedback__title {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  align-items: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+.feedback__discription {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  align-items: center;
+  text-transform: uppercase;
+  color: #333333;
+}
 .visited__name {
   font-family: inherit;
   font-style: normal;
@@ -422,16 +407,6 @@
 .emotion__button {
   background-color: #81B3D2;
   border: none;
-}
-.button__text {
-  font-family: inherit;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 21px;
-  line-height: 26px;
-  align-items: center;
-  text-transform: uppercase;
-  color: #FFFFFF;
 }
 .emotion__more {
   font-family: inherit;
@@ -472,5 +447,28 @@
   line-height: 21px;
   text-transform: uppercase;
   color: #000000;
+}
+.catalog__list {
+  background-color: #fff;
+}
+.catalog__title {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  align-items: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+.catalog__discription {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  align-items: center;
+  text-transform: uppercase;
+  color: #333333;
 }
 /*# sourceMappingURL=style.css.map */
