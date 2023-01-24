@@ -1,3 +1,78 @@
+.main-nav {
+  position: relative;
+  width: auto;
+  background: rgba(129, 179, 210, 1);
+  min-height: 223px;
+  right: 185px;
+}
+
 .main-nav__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 22.2px;
+  height: 22.2px;
+  cursor: pointer;
+  border: none;
+
+  &:hover,
+  &:active {
+  }
+}
+
+.main-nav__wrapper {
+  width: 320px;
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 0;
+  right: auto;
+  left: 0;
+
+  &::before,
+  &::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  width: 22.9px;
+  height: 22px;
+  background-image: url("../img/icon-menu.svg");
+  }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 22.2px;
+  height: 22.2px;
+  background-color: rgba(129, 179, 210, 1);
+  background-image: url(../img/icon-cross.svg);
+}
+
+
+
+@media (max-width: @mobile-width-only) {
+  .main-nav--closed .site-list__item {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+
+  .main-nav--closed .main-nav--opened {
+    padding-right: 70px;
+    padding-left: 70px;
+    text-align: center;
+  }
 }

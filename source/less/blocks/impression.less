@@ -1,0 +1,52 @@
+.impression__radio {
+  position: relative;
+  display: inline-block;
+  background-color: #f2f2f2;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  margin-right: 8px;
+  margin-left: -35px;
+  margin-top: 5px;
+  vertical-align: middle;
+}
+
+.impression__radio::before {
+  content: '';
+  display: inline-block;
+  background: #333333;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.impression__radio-real:checked + .impression__radio::before {
+  display: block;
+}
+
+.impression__radio-real {
+  display: none;
+}
+
+.impression__name {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  align-items: center;
+  color: #000000;
+  text-align: center;
+  position: relative;
+  top: 6px;
+  left: 4px;
+}
+
+
+
+
