@@ -1,4 +1,4 @@
-.visited__name {
+.visited-name {
   font-family: inherit;
   font-style: normal;
   font-weight: bold;
@@ -11,7 +11,7 @@
   left: -23px;
 }
 
-.visited__checkbox {
+.visited-checkbox {
   position: relative;
   display: inline-block;
   width: 46px;
@@ -24,7 +24,7 @@
   left: -35px;
 }
 
-.visited__checkbox::before {
+.visited-checkbox::before {
   content: '';
   display: inline-block;
   background-image: url("../img/tick.svg");
@@ -38,11 +38,11 @@
   transform: translate(-50%, -50%) scale(0);
 }
 
-.visited__checkbox-real:checked + .visited__checkbox::before {
+.visited-checkbox-real:checked + .visited-checkbox::before {
   transform: translate(-50%, -50%) scale(1);
 }
 
-.visited__checkbox-real {
+.visited-checkbox-real {
   width: 0;
   height: 0;
   opacity: 0;
