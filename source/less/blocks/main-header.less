@@ -1,10 +1,41 @@
 .main-header {
   background-color: #ffffff;
   color: #000000;
+  width: 320px;
+  position: relative;
   display: flex;
-  flex-direction: column;
+  height: 56px;
 }
 
 .main-header__logo {
   height: 96px;
+  display: flex;
+  left: 67.125px;
+  position: relative;
+}
+
+@media (min-width: @tablet-width) {
+  .main-header {
+    width: 768px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-header {
+    width: 1200px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-header__logo {
+    position: relative;
+    left: 290.5px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-header__logo {
+    position: relative;
+    left: 530.5px;
+  }
 }

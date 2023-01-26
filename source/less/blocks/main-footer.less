@@ -1,3 +1,44 @@
 .main-footer {
   background-color: #ffffff;
+  position: relative;
+  width: 320px;
+  height: 233px;
+  top: -21px;
+}
+
+.main-footer__hashtag {
+  width: 166px;
+  position: relative;
+  top: 30px;
+}
+
+.main-footer__copyright {
+  position: relative;
+  top: 54px;
+  left: 96px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-footer {
+    width: 768px;
+    height: 120px;
+    display: flex;
+    top: -120px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-footer__copyright {
+    position: relative;
+    top: 31px;
+    left: 196px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-footer__social {
+    position: relative;
+    top: -23px;
+    left: 60px;
+  }
 }

@@ -1,6 +1,15 @@
 .photo {
   background-color: #ffffff;
+  position: relative;
+  top: -172px;
 }
+
+.photo__link {
+  position: relative;
+  left: 21px;
+  top: 0px;
+}
+
 
 .photo__title {
   font-family: inherit;
@@ -9,8 +18,11 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-
   color: #000000;
+  margin: 0;
+  position: relative;
+  top: 7px;
+  left: 20px;
 }
 
 .photo__discription {
@@ -19,9 +31,10 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  text-transform: uppercase;
-
-  color: rgba(51, 51, 51, 1);
+  color: #333333;
+  position: relative;
+  top: -6px;
+  left: 20px;
 }
 
 .photo__like {
@@ -34,3 +47,111 @@
 
   color: #000000;
 }
+
+.photo__link-like {
+  position: relative;
+  top: -4px;
+  left: 57px;
+}
+
+.photo__list {
+  position: relative;
+  height: 425px;
+  top: 0px;
+  left: -1px;
+}
+
+@media (min-width: @tablet-width) {
+  .photo__title {
+    width: auto;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .photo__discription {
+    width: auto;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .photo__like {
+    width: auto;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .photo__image {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .photo__link {
+    background-image: url("../img/photo-1-tablet.jpg");
+    width: 648px;
+    display: flex;
+    height: 400px;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .photo__link-2 {
+    background-image: url("../img/photo-2-tablet.jpg");
+    width: 324px;
+    display: flex;
+    height: 267px;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .photo__link-3 {
+    background-image: url("../img/photo-3-tablet.jpg");
+    width: 324px;
+    display: flex;
+    height: 267px;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .photo__link-4 {
+    background-image: url("../img/photo-4-tablet.jpg");
+    width: 324px;
+    display: flex;
+    height: 267px;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .photo__list-2 {
+    width: 324px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .photo__list-3 {
+    width: 324px;
+    position: relative;
+    top: -416px;
+    left: 398px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .photo__list-4 {
+    width: 324px;
+    position: relative;
+    top: -408px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .photo {
+    width: 768px;
+    margin-left: 200px;
+  }
+}
+

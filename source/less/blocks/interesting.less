@@ -1,8 +1,14 @@
 .interesting {
   background-color: #ffffff;
+  margin-top: -25px;
+}
+
+.interesting__wrapper {
+  height: 270px;
 }
 
 .interesting__title {
+  position: relative;
   font-family: inherit;
   font-style: normal;
   font-weight: bold;
@@ -10,23 +16,29 @@
   line-height: 26px;
   align-items: center;
   text-transform: uppercase;
+  margin-left: 56px;
+  top: 39px;
 }
 
 .interesting__discription {
   font-family: inherit;
   font-style: normal;
   font-weight: normal;
-  font-size: 21px;
-  line-height: 18px;
+  font-size: 14px;
+  line-height: 21px;
   align-items: center;
   text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  top: 41px;
+  left: 13px;
+  width: 293px;
 }
 
 .interesting__button {
   width: 284px;
   height: 58px;
   background-color: #81b3d2;
-
   font-family: inherit;
   font-style: normal;
   font-weight: bold;
@@ -35,4 +47,55 @@
   align-items: center;
   text-transform: uppercase;
   color: #ffffff;
+  padding: 15.5px 49.3px;
+  top: 76px;
+  position: relative;
+  margin-left: 18px;
+  text-decoration: none;
+}
+
+@media (min-width: @tablet-width) {
+  .interesting {
+    width: 768px;
+    position: relative;
+    top: -583px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .interesting {
+    width: 768px;
+    position: relative;
+    top: -583px;
+    margin-left: 200px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .interesting__title {
+    left: 180px;
+    width: 435px;
+    font-size: 30px;
+    position: relative;
+    top: 61px;
+
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .interesting__discription {
+    width: 768px;
+    position: relative;
+    top: 68px;
+    left: 0px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .interesting__button{
+    position: relative;
+    top: 112px;
+    left: 137px;
+    padding: 15.5px 136.5px;
+  }
 }
